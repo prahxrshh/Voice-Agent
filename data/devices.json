@@ -1,0 +1,40 @@
+{
+  "CMG-02": {
+    "vendor": "Dummy-Nokia",
+    "model": "CMG-Simulator",
+    "os": "SimOS 1.0",
+    "interfaces": {
+      "ge-0/0/1": {
+        "status": "up",
+        "mtu": 1500,
+        "description": "Uplink"
+      },
+      "ge-0/0/2": {
+        "status": "down",
+        "mtu": 9000,
+        "description": "Backup"
+      }
+    },
+    "bgp_neighbours": [
+      {
+        "neighbor": "10.0.0.1",
+        "asn": 65001,
+        "state": "Established"
+      },
+      {
+        "neighbor": "10.0.0.2",
+        "asn": 65002,
+        "state": "Established"
+      },
+      {
+        "neighbor": "10.0.0.3",
+        "asn": 65003,
+        "state": "Down"
+      }
+    ],
+    "config": {
+      "hostname": "CMG-02",
+      "router_id": "10.255.0.2"
+    }
+  }
+}

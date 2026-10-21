@@ -1,0 +1,88 @@
+[
+  {
+    "id": "CMD-SHOW-BGP",
+    "intent": "SHOW_BGP",
+    "type": "read-only",
+    "keywords": [
+      "show bgp",
+      "bgp neighbours",
+      "bgp neighbors"
+    ],
+    "template": "show bgp neighbours"
+  },
+  {
+    "id": "CMD-SHOW-INTERFACE",
+    "intent": "SHOW_INTERFACE",
+    "type": "read-only",
+    "keywords": [
+      "show interface",
+      "interface status",
+      "show interfaces"
+    ],
+    "template": "show interface status"
+  },
+  {
+    "id": "CMD-SHOW-MTU",
+    "intent": "SHOW_MTU",
+    "type": "read-only",
+    "keywords": [
+      "show mtu",
+      "current mtu"
+    ],
+    "template": "show interface mtu"
+  },
+  {
+    "id": "CMD-SHOW-DEVICE",
+    "intent": "SHOW_DEVICE",
+    "type": "read-only",
+    "keywords": [
+      "show device",
+      "device info",
+      "device information"
+    ],
+    "template": "show device"
+  },
+  {
+    "id": "CMD-SHOW-CONFIG",
+    "intent": "SHOW_CONFIG",
+    "type": "read-only",
+    "keywords": [
+      "show config",
+      "show configuration"
+    ],
+    "template": "show configuration"
+  },
+  {
+    "id": "CMD-SET-MTU",
+    "intent": "SET_MTU",
+    "type": "configuration",
+    "keywords": [
+      "set mtu",
+      "change mtu",
+      "configure mtu"
+    ],
+    "template": "set interface mtu"
+  },
+  {
+    "id": "CMD-ENABLE-INTERFACE",
+    "intent": "ENABLE_INTERFACE",
+    "type": "configuration",
+    "keywords": [
+      "enable interface",
+      "no shutdown",
+      "bring interface up"
+    ],
+    "template": "enable interface"
+  },
+  {
+    "id": "CMD-DISABLE-INTERFACE",
+    "intent": "DISABLE_INTERFACE",
+    "type": "configuration",
+    "keywords": [
+      "disable interface",
+      "shutdown interface",
+      "bring interface down"
+    ],
+    "template": "disable interface"
+  }
+]
